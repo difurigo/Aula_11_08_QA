@@ -12,9 +12,9 @@ public class ApdexTest {
         Apdex apdex = new Apdex();
 
         // act
-        float score = apdex.calculcarApdex(770, 60, 100);
+        double score = apdex.calculcarApdex(90, 0, 100);
 
         // assert
-        Assertions.assertEquals(0.80, score, 0.001);
+        Assertions.assertEquals(0.90, score);
     }
 }
